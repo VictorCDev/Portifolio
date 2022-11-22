@@ -1,0 +1,98 @@
+<!--ToolBar-->
+<mat-toolbar>
+  <div class="toolbar-row">
+    <p>&lt;VH /&gt;</p>
+    <p>Home</p>
+    <p>Sobre</p>
+    <p>Experiência</p>
+    <p>Projetos</p>
+  </div>
+</mat-toolbar>
+
+<!--Body-->
+
+<body class="body-app">
+  <mat-grid-list cols="2" rowHeight="2.5:1">
+    <mat-grid-tile>
+      <div>
+        <h2>Olá, eu sou</h2>
+        <h1>Victor Hugo</h1>
+        <h2>Desenvolvedor Front-end Web/Mobile</h2>
+        <div class="button1">
+          <button mat-raised-button>Linkedin</button>
+          <button mat-raised-button>GitHub</button>
+        </div>
+      </div>
+
+    </mat-grid-tile>
+    <mat-grid-tile><img src="../assets/Under-construction.png" alt="Minha Figura" height="400">
+    </mat-grid-tile>
+    <mat-grid-tile><img src="../assets/Under-construction.png" alt="Minha Figura" height="400">
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div>
+        <h1>Sobre Mim</h1>
+        <h2>Olá, Sou Engenheiro Mecânico e atualmente estou em transição de carreira, começei meus estudos fazendo um
+          BootCamp de Front-end, onde foram abordados os FrameWorks: Vue, React e Angular. Após vários meses de estudos
+          em 2022 consegui meu primeiro emprego como Desenvolvedor, onde atuei em React. Estou cursando Análise e
+          Desenvolvimento de Sistemas e continuo meus estudos.
+          Estou tambem estudando Desenvolvimento em Mobile, utilizando Flutter.
+        </h2>
+        <button mat-raised-button>Curriculo</button>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div>
+        <h1>Experiência</h1>
+
+        <mat-tree [treeControl]="treeControl" [dataSource]="dataSource">
+          <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
+            <button mat-button>{{node.name}}</button>
+          </mat-tree-node>
+          <mat-tree-node *matTreeNodeDef="let node;when:hasChild" matTreeNodePadding>
+            <button mat-icon-button matTreeNodeToggle [attr.atria-label]="'Toggle'+'node.name'">
+              <mat-icon class="mat-icon-rtl-mirror">
+                {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+              </mat-icon>
+            </button>
+            {{node.name}}
+          </mat-tree-node>
+        </mat-tree>
+      </div>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <mat-card>
+        <div style="display: flex;">
+        <mat-card-header>Desenvolvedor Front-End</mat-card-header>
+        <mat-card-header>Data: 06/04/2022</mat-card-header>
+        </div>
+        <mat-card-content>Lorem ipsum dolor sit amet. Non consequuntur natus ad sunt sequi a suscipit eligendi cum
+          dolorem sint qui repellendus eius qui quia reiciendis nam eius beatae. Ex ducimus consectetur eos asperiores
+          cumque et quia porro eum incidunt rerum eos corporis itaque! Et distinctio voluptatum in illo Quis non
+          molestias omnis aut commodi fugiat est explicabo enim. Et nulla esse et molestiae provident ea rerum galisum
+          et odit praesentium non optio eveniet.
+
+          Et eaque rerum et Quis sint non omnis similique. Quo quisquam magnam eum sint aliquam quo unde veniam.
+
+          Hic nihil corporis ut voluptatem Quis est consequatur eveniet eum nihil soluta ut voluptatem illum 33 quisquam
+          beatae qui molestiae amet. Vel temporibus sint sed blanditiis eaque id molestias internos. Ut consequatur
+          corrupti ut internos accusantium et Quis voluptatem qui placeat error id ipsum eius. Et quasi rerum eos
+          consequatur quis et ducimus quae!
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+  </mat-grid-list>
+  <div>
+    <h1>Projetos</h1>
+    <img src="../assets/Under-construction.png" alt="Minha Figura" height="400">
+
+  </div>
+  <div>
+    <h2>Desenvolvido por Victor Hugo</h2>
+    <h3>Email: victorhrc372@gmail.com </h3>
+  </div>
+
+
+</body>
