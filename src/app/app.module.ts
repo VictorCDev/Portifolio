@@ -7,8 +7,8 @@ import { MatToolbarModule } from '@angular/material/toolbar'
 import { MatButtonModule } from '@angular/material/button'
 import { MatGridListModule } from '@angular/material/grid-list'
 import { MatTreeModule } from '@angular/material/tree'
-import {MatIconModule} from '@angular/material/icon';
-import {MatCardModule} from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,8 @@ import {MatCardModule} from '@angular/material/card';
     MatGridListModule,
     MatTreeModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+        
   ],
   providers: [],
   bootstrap: [AppComponent]

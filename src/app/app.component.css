@@ -1,21 +1,6 @@
-.example-spacer {
-    flex: 1 1 auto;
-  }
-
-.toolbar-row{
-    display: flex;
-}
-
-.body-app {
-    background-color: rgb(197, 197, 197);
-}
-
-.button1{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.card-projetos{
-    display: flex;
-    justify-content: space-evenly;
-}
+/* body {
+    background-image: url('../assets/images/html/background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  } */

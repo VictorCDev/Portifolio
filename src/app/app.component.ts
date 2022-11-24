@@ -1,22 +1,22 @@
 import { Component } from '@angular/core';
-import {FlatTreeControl} from '@angular/cdk/tree';
-import {MatTreeFlatDataSource, MatTreeFlattener} from '@angular/material/tree';
+import { FlatTreeControl } from '@angular/cdk/tree';
+import { MatTreeFlatDataSource, MatTreeFlattener } from '@angular/material/tree';
 
-interface FileNode{
+interface FileNode {
   name: string;
   children?: FileNode[];
 }
 
-interface FlatNode{
-  expandable:boolean;
-  name:string;
-  level:number;
+interface FlatNode {
+  expandable: boolean;
+  name: string;
+  level: number;
 }
 
 const TREE_DATA: FileNode[] = [
   {
     name: 'Src',
-    children: [{name: 'Empresa 1'}, {name: 'Empresa 2'}, {name: 'Empresa 3'}],
+    children: [{ name: 'Empresa 1' }, { name: 'Empresa 2' }, { name: 'Empresa 3' }],
   },
 ];
 
@@ -48,11 +48,19 @@ export class AppComponent {
   );
 
   dataSource = new MatTreeFlatDataSource(this.treeControl, this.treeFlattener);
+  router: any;
 
   constructor() {
     this.dataSource.data = TREE_DATA;
   }
 
   hasChild = (_: number, node: FlatNode) => node.expandable;
+
+  infoMore: boolean = true;
+  visible: boolean = false;
+  showInfo() {
+    this.infoMore = !this.infoMore;
+    this.visible = !this.visible;
+  }
 
 }
