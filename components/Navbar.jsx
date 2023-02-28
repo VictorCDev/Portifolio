@@ -32,8 +32,8 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className='py-10 mb-12 flex justify-between'>
-        <h1 className='text-xl font-burtons dark:text-white'>developbyvh</h1>
+      <nav className='py-10 mb-12 flex justify-between md:px-20'>
+        <h1 className='text-2xl font-burtons dark:text-white'>developbyvh</h1>
         <ul className='flex items-center'>
           <li>
             {renderThemeChenger()}

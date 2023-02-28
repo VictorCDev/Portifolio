@@ -35,8 +35,8 @@ const ProjectsSection = () => {
   return (
     <section>
       <div>
-        <h1 className='text-center font-bold text-4xl'>Projetos
-          <hr className='w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded'></hr>
+        <h1 className='text-center font-bold text-4xl md:text-8xl md:pb-10'>Projetos
+          <hr className='w-6 h-1 mx-auto my-4 md:w-36 md:h-2 bg-teal-500 border-0 rounded'></hr>
         </h1>
       </div>
       <div className='flex flex-col space-y-28'>
@@ -58,7 +58,7 @@ const ProjectsSection = () => {
                   </div>
                   <div className='mt-12 md:w-1/2'>
                     <h1 className='text-4xl font-bold mb-6'>{project.name}</h1>
-                    <p className='text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400'>{project.description}</p>
+                    <p className='text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-200'>{project.description}</p>
                     <div className='flex flex-row align-bottom space-x-4'>
                       <Link href={project.github} target="_blank"> <BsGithub size={30} className="hover:-translate-y-1 transition-transform cursor-pointer" /> </Link>
                       <Link href={project.link} target="_blank"> <BsArrowUpRightSquare size={30} className="hover:-translate-y-1 transition-transform cursor-pointer" /> </Link>
