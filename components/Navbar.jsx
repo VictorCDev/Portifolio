@@ -1,5 +1,5 @@
 import React from "react";
-import { BsFillMoonStarsFill, BsFillSunFill, BsList, BsXLg } from 'react-icons/bs'
+import { BsFillMoonStarsFill, BsFillSunFill, BsDownload } from 'react-icons/bs'
 import { useState, useEffect } from 'react';
 import { useTheme } from "next-themes";
 
@@ -7,7 +7,6 @@ const Navbar = () => {
 
   const { systemTheme, theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false);
-  const [navbar, setNavbar] = useState(false);
 
   useEffect(() => {
     setMounted(true)
@@ -39,13 +38,9 @@ const Navbar = () => {
             {renderThemeChenger()}
           </li>
           <li>
-            <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="#">Resume</a>
+            <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="Curriculo.pdf" download> Download CV</a>
           </li>
-          {/* <div className="sm:hidden">
-            <button>
-              {navbar ? <BsXLg size={30} /> : <BsList size={30} />}
-            </button>
-          </div> */}
+
         </ul>
 
       </nav>

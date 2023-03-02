@@ -17,7 +17,7 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico.png" />
         </Head>
         
-        <main className='bg-yellow-200/30 z-[2] px-10 md:px-20 lg:px-40 dark:bg-gray-900/80'>
+        <main className='bg-yellow-200/60 z-[2] px-10 md:px-20 lg:px-40 dark:bg-gray-900/80'>
           <section className="min-h-screen" >
             <Navbar />
             <HeroSection />
