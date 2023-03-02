@@ -1,15 +1,15 @@
 import React from 'react'
 
 const skills = [
-    { skill: "HTML" },
-    { skill: "CSS" },
-    { skill: "Javascript" },
-    { skill: "Typescript" },
     { skill: "React" },
     { skill: "Angular" },
-    { skill: "Flutter" },
+    { skill: "Javascript" },
+    { skill: "Typescript" },
     { skill: "Tailwind CSS" },
     { skill: "Next.js" },
+    { skill: "HTML" },
+    { skill: "CSS" },      
+    { skill: "Flutter" },    
     { skill: "GitHub" },
 ]
 
