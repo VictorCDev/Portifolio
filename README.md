@@ -3,7 +3,11 @@
 </br>
 
 <h2>Tecnologias Utilizadas</h2>
-<h4>ReactJs</h4>
-<h4>NextJs</h4>
-<h4>Javascript</h4>
-<h4>Estilização com TailwindCSS</h4>
+<h4>- ReactJs</h4>
+<h4>- NextJs</h4>
+<h4>- Javascript</h4>
+<h4>- Estilização com TailwindCSS</h4>
+
+<h2>Site do projeto hospedado</h2>
+
+- https://portifolio-seven-pi.vercel.app
