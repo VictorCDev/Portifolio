@@ -3,14 +3,12 @@ import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 import { BsArrowDown } from 'react-icons/bs'
 import Image from 'next/image';
 
-
-
 const HeroSection = () => {
     return (
         <section>
             <div className="flex flex-col text-center items-center justify-center my-10 md:py-32 md:flex-row md:space-x-40">
                 <div className="sm:pb-5 py-10">
-                    <Image priority className="rounded-full shadow-2xl" src="/headshot.png" alt="" width={300} height={300} />
+                    <Image priority className="rounded-full shadow-2xl" src="/victor.png" alt="" width={300} height={300} />
                 </div>
                 <div>
                     <h2 className="text-2xl">Olá, meu nome é</h2>
