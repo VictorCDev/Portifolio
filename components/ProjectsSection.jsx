@@ -6,11 +6,11 @@ import SlideUp from './SlideUp'
 
 const projects = [
   {
-    name: "Under Construction",
+    name: "Mini Autorizador",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    image: "/underconstruction.jpg",
-    github: "null",
+      "Construção de um mini-autorizador onde é uma aplicação Spring Boot com interface totalmente REST que permita: Criar cartões, obter saldo, autorizar transações.",
+    image: "/mini autorizador.jpg",
+    github: "https://github.com/VictorCDev/mini-autorizador",
     link: "null",
   },
   {
@@ -46,7 +46,7 @@ const ProjectsSection = () => {
               <SlideUp offset='-300px 0px -300px 0px'>
                 <div className='flex flex-col animate-slideUpCubiBezier animatin-delay-2 md:flex-row md:space-x-12'>
                   <div className='mt-8 md:w-1/2'>
-                    <Link href={project.link} target="_blank">
+                    <Link href={project.github} target="_blank">
                       <Image
                         src={project.image}
                         alt=""

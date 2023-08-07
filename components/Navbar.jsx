@@ -38,7 +38,7 @@ const Navbar = () => {
             {renderThemeChenger()}
           </li>
           <li>
-            <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="Curriculo.pdf" download> Download CV</a>
+            <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="Victor Cunha Curriculo.pdf" download> Download CV</a>
           </li>
 
         </ul>

@@ -5,6 +5,9 @@ const skills = [
     { skill: "Angular" },
     { skill: "Javascript" },
     { skill: "Typescript" },
+    { skill: "Java" },
+    { skill: "Spring Boot" },
+    { skill: "Oracle/MySQL" },
     { skill: "Tailwind CSS" },
     { skill: "Next.js" },
     { skill: "HTML" },
@@ -25,10 +28,10 @@ const AboutSection = () => {
                         <h1 className='text-center text-2xl font-bold mb-6 md:text-left md:text-6xl'>Quem sou?</h1>
                         <p className='leading-2 text-gray-800 text-xl md:text-2xl dark:text-white'>
                             Estou em transição de carreira e sou apaixonado por tecnologia, sou formado em Engenharia Mecânica e em breve estarei formado em Análise e Desenvolvimento de Sistemas. <br/>
-                            Atualmente faço projetos com
-                            <span className='font-bold'>{" React"}</span>, 
-                            <span className='font-bold'>{" Angular"}</span>, 
-                            <span className='font-bold'>{" Tailwind CSS"}</span>. 
+                            Atualmente faço projetos como Full-Stack em 
+                            <span className='font-bold'>{" Java"}</span>, 
+                            <span className='font-bold'>{" React"}</span> e 
+                            <span className='font-bold'>{" Angular"}</span>. 
                             Procuro sempre aprimorar minhas habilidades e conhecimentos. Na Universidade e com cursos e projetos pessoais,
                             busco sempre crescimento em relação a minha vida profissional e pessoal.
                         </p>

@@ -13,7 +13,7 @@ const HeroSection = () => {
                 <div>
                     <h2 className="text-2xl">Olá, meu nome é</h2>
                     <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl '>Victor Hugo</h2>
-                    <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>sou Desenvolvedor Front-End</h3>
+                    <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>sou Desenvolvedor Full-Stack</h3>
                     <div className='text-5xl flex justify-center gap-16 py-3 text-gray-700 dark:text-white'>
                         <a href="https://www.linkedin.com/in/victor-hugo-0326b5b7/" rel="noreferrer" target="_blank" >
                             <AiFillLinkedin className="hover:-translate-y-1 transition-transform cursor-pointer "  />
